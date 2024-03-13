@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sinh viên</title>
+</head>
+<body>
+    <div>
+        <h1> Quan ly sinh vien</h1>
+        <div>
+            <form action="" id="form-control-student">
+                <label for="">Mã sinh viên:</label>
+                <input type="text" id="student-id" >
+                <br>
+                <label for="">Tên sinh viên:</label>
+                <input type="text" id="name">
+                <br>
+                <label for="">Email sinh viên:</label>
+                <input type="text" id="email">
+                <br>
+                <Label for="">Điểm toán:</Label>    
+                <input type="text" id="math">
+                <br>
+                <label for="">Điểm lý:</label>
+                <input type="text" id="physic">
+                <br>
+                <label for="">Điểm hóa:</label>
+                <input type="text" id="chemical">
+                <br>
+            <button onclick="addNewStudent()">Thêm sinh viên</button>
+            <button onclick="resertStudents()">Xóa danh sách Sinh viên</button>
+            <button onclick="updateStudent()">Cập nhật sinh viên</button>
+        </form>
+            <table style="width: 600px; border-collapse: collapse;" border="1">
+                <thead>
+                    <tr>
+                        <th>Mã sinh viên</th>
+                        <th>Tên sinh viên</th>
+                        <th>Email sinh viên</th>
+                        <th>Điểm trung bình</th>
+                        <th>Thao tác</th>
+                </tr>
+                </thead>
+                <tbody id="table-body">                    
+                </tbody>
+            </table>
+        
+        </div>
+    </div>
+    <script src="./js/model/model.js"></script>
+    <script src="./js/controller/controller.js"></script>
+    <script src="./main.js"></script>
+    </body>
+</html>
